@@ -449,16 +449,15 @@ nav a {
 
 /*回頂端*/
 .back {
-    position: fixed; 
-    right: 10px; 
-    top:640px; 
-}
-  
-.back img {
-    width: 50px; 
-    height: auto; 
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
 
+.back img {
+    width: 50px;
+    height: auto;
+}
 
 
 /*footer*/
