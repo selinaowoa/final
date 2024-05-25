@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>商品資訊</title>
+    <link rel="stylesheet" href="..\assets\css\good.css" />
+    <script src="../assets/js/good.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <img class="logo" src="../assets/image/logo.png" alt="logo" />
+        <nav>
+          <ul class="nav-links">
+            <li><a href="aboutus.html">關於我們</a></li>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="goods.html">商品瀏覽</a></li>
+            <li class="dropdown">
+              <a href="aboutus.html">會員資訊</a>
+              <div class="dropdown-content">
+                <a href="memberinfo.html">會員資料</a>
+                <a href="reviewmessageboard.html">購買紀錄</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="top-links">
+          <a href="cart.html"><img src="../assets/image/cart.png" alt="購物車" width="20" height="20" /></a>
+          <a href="member.html"><img src="../assets/image/member.png" alt="會員" width="20" height="20" /></a>
+          <div class="search-box" id="searchBox">
+            <img src="../assets/image/search.png" alt="搜尋" width="20" height="20" onclick="toggleSearch()" />
+            <input type="text" placeholder="搜尋商品..." id="searchInput" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="productDetails">
+        <!-- 商品詳系資訊 -->
+      </div>
+
+      <div class="reviews">
+        <h2>評論</h2>
+        <div class="review">
+          <div class="rating">
+            <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span
+            ><span class="star">&#9733;</span><span class="star">&#9733;</span>
+          </div>
+          <p class="review-content">這個商品很美味！我很喜歡。</p>
+          <p class="reviewer">- John</p>
+        </div>
+
+        <div class="review">
+          <div class="rating">
+            <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span
+            ><span class="star">&#9733;</span><span class="star">&#9733;</span>
+          </div>
+          <p class="review-content">我要全部買下來。</p>
+          <p class="reviewer">- Selina</p>
+        </div>
+        <!-- 更多評論 -->
+      </div>
+
+      <div class="rating-area">
+        <h2>評分留言板</h2>
+        <div class="rating">
+          <input type="radio" name="star" id="star1" /><label for="star1"></label>
+          <input type="radio" name="star" id="star2" /><label for="star2"></label>
+          <input type="radio" name="star" id="star3" /><label for="star3"></label>
+          <input type="radio" name="star" id="star4" /><label for="star4"></label>
+          <input type="radio" name="star" id="star5" /><label for="star5"></label>
+        </div>
+        <textarea name="memo" cols="45" rows="1" wrap="hard"> </textarea>
+        <input type="submit" value="送出" onclick="showConfirmation()" class="rate-submit" />
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy;咕喞</p>
+    </footer>
+  </body>
+</html>
