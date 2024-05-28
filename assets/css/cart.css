@@ -1,0 +1,195 @@
+body,
+html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: Arial, sans-serif;
+}
+
+/*header*/
+header {
+    text-align: center;
+    padding: 15px;
+    background-color: #41553A;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav {
+    margin-top: -50px;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.top-links {
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: -5px;
+    margin-right: 50px;
+}
+
+.top-links a {
+    margin: 8px;
+    text-decoration: none;
+}
+
+/* Search box */
+.input-group {
+    align-items: center;
+    margin-top: 32px;
+}
+
+.input-group input[type="text"] {
+    width: 180px;
+    padding: 5px 30px 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: -100px;
+}
+
+.search-icon {
+    position: relative;
+    right: 30px;
+    cursor: pointer;
+}
+
+.search-icon img {
+    width: 16px;
+    height: 16px;
+    margin-bottom: -4px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.input-group {
+    margin-right: 10px;
+}
+
+/*main*/
+h1{
+    text-align: center;
+    font-size: 25px;
+}
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 0 auto; 
+    margin-bottom: 20px;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.quantity-input {
+    width: 50px;
+}
+
+.delete-link {
+    color: #000000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.delete-link:hover {
+    color: #000000;
+}
+
+.checkout-btn {
+    width: 70%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; 
+    margin: 70px auto 0; 
+    margin-bottom: 10px;
+}
+
+.checkout-btn:hover {
+    background-color: #45a049;
+}
+
+.delivery-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/*footer*/
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding: 20px;
+    background-color: #41553A;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    font-weight: bold;
+    color: #ede5e5;
+}
+
+
+
