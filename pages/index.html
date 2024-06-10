@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>咕喞</title>
+    <link rel="icon" href="../assets/image/logo.png" />
+    <link rel="stylesheet" href="..\assets\css\index.css" />
+    <script src="../assets/js/index.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <img class="logo" src="../assets/image/logo.png" alt="logo" />
+        <div class="search-box" id="searchBox">
+          <div class="input-group">
+            <input type="text" placeholder="請輸入關鍵字..." id="searchInput" />
+            <span class="search-icon">
+              <img src="../assets/image/search.png" alt="Search" onclick="toggleSearch()" />
+            </span>
+          </div>
+        </div>
+        <div class="top-links">
+          <a href="cart.html"><img src="../assets/image/cart.png" alt="購物車" width="20" height="20" /></a>
+          <a href="member.html"><img src="../assets/image/member.png" alt="會員" width="20" height="20" /></a>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="aboutus.html">關於我們</a></li>
+          <li><a href="index.html">首頁</a></li>
+          <li>
+            <div class="dropdown">
+              <a href="goods.html">商品瀏覽</a>
+              <!-- <div class="dropdown-content">
+                <a href="goods.html#cookies">餅乾</a>
+                <a href="goods.html#candy">糖果</a>
+                <a href="goods.html#drinks">飲料</a>
+              </div> -->
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">會員資訊</a>
+            <div class="dropdown-content">
+              <a href="memberinfo.html">會員資料</a>
+              <a href="reviewmessageboard.html">購買紀錄</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <nav class="top">
+      <marquee>全館特惠價來啦！即日起，滿2000元折200元！要買要快喔！</marquee>
+    </nav>
+
+    <!-- 照片 -->
+    <div class="image">
+      <aside class="carousel">
+        <div class="carousel-container">
+          <img src="../assets/image/background1.png" alt="背景1" />
+          <img src="../assets/image/background2.png" alt="背景2" onclick="window.location.href = 'goods.html#cookies';" />
+          <img src="../assets/image/background3.jpg" alt="背景3" onclick="window.location.href = 'goods.html#candy';" />
+          <img src="../assets/image/background4.jpg" alt="背景3" onclick="window.location.href = 'goods.html#drink';" />
+          <img src="../assets/image/background5.png" alt="背景4" />
+        </div>
+        <button class="carousel-button prev" onclick="prevSlide()">
+          <span class="arrow left"></span>
+        </button>
+        <button class="carousel-button next" onclick="nextSlide()">
+          <span class="arrow right"></span>
+        </button>
+        <div class="carousel-indicators">
+          <span class="indicator" onclick="currentSlide(0)"></span>
+          <span class="indicator" onclick="currentSlide(1)"></span>
+          <span class="indicator" onclick="currentSlide(2)"></span>
+          <span class="indicator" onclick="currentSlide(3)"></span>
+          <span class="indicator" onclick="currentSlide(4)"></span>
+        </div>
+      </aside>
+    </div>
+
+    <!-- 中間部分 -->
+    <div class="list">熱銷排行榜</div>
+    <div class="information">
+      <div class="block">
+        <div class="blockword1">
+          TOP1
+          <a href="../pages/good.html#drink2"><img src="../assets/image/drinks2remove.png" /></a>
+        </div>
+        <div class="blockword">彈珠汽水250ml</div>
+      </div>
+      <div class="block">
+        <div class="blockword2">
+          TOP2
+          <a href="../pages/good.html#cookies4"><img src="../assets/image/cookies4remove.png" /></a>
+        </div>
+        <div class="blockword">黑糖祈福餅</div>
+      </div>
+      <div class="block">
+        <div class="blockword3">
+          TOP3
+          <a href="../pages/good.html#candy3"><img src="../assets/image/candy3remove.png" /></a>
+        </div>
+        <div class="blockword">手工芝麻糖</div>
+      </div>
+    </div>
+
+    <!-- 品牌介紹 -->
+    <div class="brandlist">品牌介紹</div>
+    <div class="information2">
+      <div class="brandintroduce1">
+        <div class="brandintroduce-word1">
+          專賣各種古早味餅乾、糖果和飲料。<br />
+          從經典的風味到兒時的回憶，<br />
+          每一口都能帶您回到過去的美好時光。<br />
+          滿滿的復古風情，<br />
+          喚起無盡的懷舊感受。<br />
+          讓我們一起重溫那些珍貴的回憶，<br />
+          品味那份難以忘懷的純真與美好。
+        </div>
+      </div>
+      <div class="brand">
+        <img src="../assets/image/logo.png" alt="logo2" />
+      </div>
+      <div class="brandintroduce2">
+        <div class="brandintroduce-word2">
+          以「咕」字命名，將「古」字添加了口字旁，保留了傳統的味道，又增添了一份童趣和親切感。<br />
+          這個名字象徵著我們對食物品質的堅持，同時也希望每一位顧客在品嚐我們的產品時，都能感受到那份源自童年的美好回憶。
+        </div>
+      </div>
+    </div>
+
+    <!-- 地圖 -->
+    <div class="mapword">尋找我們</div>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.256463818218!2d121.23820147482957!3d24.957387541373198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221447a0f021%3A0x2b86d2650bb8bcff!2z5Lit5Y6f5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1716219898025!5m2!1szh-TW!2stw"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <p class="mapword2">地址：桃園市中壢區中北路200號</p>
+    </div>
+
+    <div class="back">
+      <a href="#"><img src="../assets/image/top.png" /></a>
+    </div>
+
+    <footer>
+      <p>&copy;咕喞</p>
+      <p>瀏覽人數：</p>
+    </footer>
+  </body>
+</html>
