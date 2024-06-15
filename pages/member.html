@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/member.css" />
+    <script src="../assets/js/member.js" defer></script>
+    <title>咕喞</title>
+    <link rel="icon" href="../assets/image/logo.png" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="index.html"><img class="logo" src="../assets/image/logo.png" alt="logo" /></a>
+        <div class="search-box" id="searchBox">
+          <div class="input-group">
+            <input type="text" placeholder="請輸入關鍵字..." id="searchInput" />
+            <span class="search-icon">
+              <img src="../assets/image/search.png" alt="Search" onclick="toggleSearch()" />
+            </span>
+          </div>
+        </div>
+        <div class="top-links">
+          <a href="cart.html"><img src="../assets/image/cart.png" alt="購物車" width="20" height="20" /></a>
+          <a href="member.html"><img src="../assets/image/member.png" alt="會員" width="20" height="20" /></a>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="aboutus.html">關於我們</a></li>
+          <li><a href="index.html">首頁</a></li>
+          <li>
+            <div class="dropdown">
+              <a href="goods.html">商品瀏覽</a>
+              <!-- <div class="dropdown-content">
+              <a href="goods.html#cookies">餅乾</a>
+              <a href="goods.html#candy">糖果</a>
+              <a href="goods.html#drinks">飲料</a>
+            </div> -->
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">會員資訊</a>
+            <div class="dropdown-content">
+              <a href="memberinfo.html">會員資料</a>
+              <a href="reviewmessageboard.html">購買紀錄</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 介面 -->
+    <div class="login">
+      <div class="login__content">
+        <div class="login__forms">
+          <form action="" class="login__registre block" id="login-in">
+            <h1 class="login__title">登入</h1>
+            <div class="login__box">
+              <i class="bx bx-user login__icon"></i>
+              <input type="text" placeholder="帳號" class="login__input" />
+            </div>
+            <div class="login__box">
+              <i class="bx bx-lock-alt login__icon"></i>
+              <input type="password" placeholder="密碼" class="login__input" />
+            </div>
+            <div class="login__check">
+              <input id="check" type="checkbox" class="check" checked />
+              <label for="check"><span class="icon"></span> 保持登入</label>
+            </div>
+            <a href="#" class="login__forgot">忘記密碼?</a>
+            <a href="#" class="login__button">登入</a>
+            <div>
+              <span class="login__account">還沒有帳號 ?</span>
+              <span class="login__signin" id="sign-up">註冊</span>
+            </div>
+          </form>
+          <form action="" class="login__create none" id="login-up">
+            <h1 class="login__title">建立帳號</h1>
+            <div class="login__box">
+              <i class="bx bx-user login__icon"></i>
+              <input type="text" placeholder="使用者名稱" class="login__input" />
+            </div>
+            <div class="login__box">
+              <i class="bx bx-at login__icon"></i>
+              <input type="email" placeholder="信箱" class="login__input" />
+            </div>
+            <div class="login__box">
+              <i class="bx bx-at login__icon"></i>
+              <input type="text" placeholder="電話" class="login__input" />
+            </div>
+            <div class="login__box">
+              <i class="bx bx-at login__icon"></i>
+              <input type="text" placeholder="帳號" class="login__input" />
+            </div>
+            <div class="login__box">
+              <i class="bx bx-lock-alt login__icon"></i>
+              <input type="password" placeholder="密碼" class="login__input" />
+            </div>
+            <a href="#" class="login__button">註冊</a>
+            <div>
+              <span class="login__account">已經有帳號了 ?</span>
+              <span class="login__signup" id="sign-in">登入</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy;咕喞</p>
+    </footer>
+  </body>
+</html>

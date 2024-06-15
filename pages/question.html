@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="..\assets\css\question.css" />
+    <script src="../assets/js/aboutus.js"></script>
+    <title>咕喞</title>
+    <link rel="icon" href="../assets/image/logo.png" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <img class="logo" src="../assets/image/logo.png" alt="logo" />
+        <div class="search-box" id="searchBox">
+          <div class="input-group">
+            <input type="text" placeholder="請輸入關鍵字..." id="searchInput" />
+            <span class="search-icon">
+              <img src="../assets/image/search.png" alt="Search" onclick="toggleSearch()" />
+            </span>
+          </div>
+        </div>
+        <div class="top-links">
+          <a href="cart.html"><img src="../assets/image/cart.png" alt="購物車" width="20" height="20" /></a>
+          <a href="member.html"><img src="../assets/image/member.png" alt="會員" width="20" height="20" /></a>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="aboutus.html">關於我們</a></li>
+          <li><a href="index.html">首頁</a></li>
+          <li>
+            <div class="dropdown">
+              <a href="goods.html">商品瀏覽</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">會員資訊</a>
+            <div class="dropdown-content">
+              <a href="memberinfo.html">會員資料</a>
+              <a href="reviewmessageboard.html">購買紀錄</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+<body>
+  <main>
+  <div class="qaword">常見Q&A</div>
+      <div class="layout">
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>如何購買？</p>
+            </div>
+            <div class="accordion__answer">
+                <p>
+                  將喜歡的零食、飲料加到購物車後，在購物車頁面填寫結帳資料，選擇付款方式，完成付款後送出訂單即可。
+                </p>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>如何註冊會員？</p>
+            </div>
+            <div class="accordion__answer">
+                <p>
+                  點選右上方會員圖示依循指示填寫資料，即可完成註冊。
+                </p>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>如何修改訂單內容？</p>
+            </div>
+            <div class="accordion__answer">
+                <p>
+                  進入購物車頁面，即可對商品的數量與品項進行增減。
+                </p>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>有哪些付款方式？</p>
+            </div>
+            <div class="accordion__answer">
+                <p>
+                  可選擇線上付款或是貨到付款。
+                </p>
+            </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion__question">
+              <p>可以退換貨嗎？</p>
+          </div>
+          <div class="accordion__answer">
+              <p>
+                商品到貨三天之內若有退換貨需求，請聯繫客服專線，超過三天恕不負責。
+              </p>
+          </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.querySelectorAll(".accordion")
+    .forEach(item => {
+      item.addEventListener('click', function() {
+        this.classList.toggle("active");
+      });
+    });
+  </script>
+
+
+  <footer>
+      <p>&copy;咕喞</p>
+  </footer>
+
+</body>
+</html>
